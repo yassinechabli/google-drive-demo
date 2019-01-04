@@ -1,11 +1,11 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
     session_start();
     try{
         $client = new Google_Client();
-        $client->setAuthConfigFile('credentials.json');
-        $client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/google_drive/oauth2callback.php');
+        $client->setAuthConfigFile('../credentials.json');
+        $client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/google_drive/src/oauth2callback.php');
         $client->addScope(Google_Service_Drive::DRIVE_METADATA_READONLY);
 
         if (! isset($_GET['code'])) {

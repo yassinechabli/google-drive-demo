@@ -1,13 +1,19 @@
 {
-    "name": "root/google_drive",
-    "type": "symfony-bundle",
+    "name": "google drive demo",
+    "type": "dev",
     "license": "me",
     "authors": [
         {
             "name": "mychabli",
-            "email": "mychabli@octo.com"
+            "email": "chablimohammedyassine@gmail.com"
         }
     ],
+    "autoload": {
+        "classmap": [
+
+            "src"
+        ]
+    },
     "minimum-stability": "dev",
     "require": {
         "google/apiclient": "^2.0"
