@@ -1,0 +1,15 @@
+{
+    "name": "root/google_drive",
+    "type": "symfony-bundle",
+    "license": "me",
+    "authors": [
+        {
+            "name": "mychabli",
+            "email": "mychabli@octo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "google/apiclient": "^2.0"
+    }
+}
